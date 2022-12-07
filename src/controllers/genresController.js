@@ -7,7 +7,7 @@ const { Op } = require("sequelize");
 // Listado de todos los géneros con sus canciones
 const genresController = {
     list: (req, res) => {
-        db.Genero.findAll({ include: [{association: canciones}] })
+        db.Genero.findAll({ include: [{association: "canciones"}] })
 
         .then((genres)=> res.json(
                 {

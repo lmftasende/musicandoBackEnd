@@ -1,0 +1,17 @@
+{
+  "name": "musicandobackend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/app",
+    "test": "nodemon src/app"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.23.1",
+    "sequelize-cli": "^6.5.2"
+  }
+}

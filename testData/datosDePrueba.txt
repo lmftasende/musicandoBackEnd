@@ -1,0 +1,321 @@
+
+
+              
+/canciones (POST) para crear un nuevo registro de una canción
+                {"id": 1, "titulo": "Cuando ya me empiece a quedar solo", "duracion": 217, "genero_id": 1, "album_id": 1, "artista_id": 1 }
+                
+                {"id": 10, "titulo": "So What", "duracion": 567, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                {"id": 11, "titulo": "Freddie Freeloader", "duracion": 591, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                {"id": 12, "titulo": "Blue in Green", "duracion": 339, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                {"id": 13, "titulo": "All Blues", "duracion": 697, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                {"id": 14, "titulo": "Flamenco Sketches", "duracion": 567, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                {"id": 15, "titulo": "On Green Dolphin Street", "duracion": 591, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                {"id": 16, "titulo": "Fran-Dance", "duracion": 351, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                {"id": 17, "titulo": "Stella By Starlight ", "duracion": 284, "genero_id": 2, "album_id": 2, "artista_id": 2 }
+                
+
+/canciones/:id (GET) que muestre una canción
+
+/canciones/1 (PUT) para editar una canción
+                { "id": 1, "titulo": "Cuando ya me empiece a quedar solo", "duracion": 227, "genero_id": 1, "album_id": 1, "artista_id": 1 }
+              
+
+/canciones/:id (DELETE) para eliminar una canción
+/generos (GET) listado de todos los géneros con sus canciones
+
+{
+    "meta": {
+        "status": 200,
+        "length": 25,
+        "url": "/generos"
+    },
+    "data": [
+        {
+            "id": 1,
+            "name": "Rock",
+            "canciones": [
+                {
+                    "id": 1,
+                    "titulo": "Cuando ya me empiece a quedar solo",
+                    "duracion": 217,
+                    "created_at": "2022-12-07T20:53:15.000Z",
+                    "updated_at": null,
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                },
+                {
+                    "id": 2,
+                    "titulo": "Bienvenidos al tren",
+                    "duracion": 214,
+                    "created_at": "2022-12-03T00:44:33.000Z",
+                    "updated_at": "2022-12-03T00:44:33.000Z",
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                },
+                {
+                    "id": 3,
+                    "titulo": "Un hada, un cisne",
+                    "duracion": 386,
+                    "created_at": "2022-12-03T00:45:18.000Z",
+                    "updated_at": "2022-12-03T00:45:18.000Z",
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                },
+                {
+                    "id": 4,
+                    "titulo": "Confesiones de invierno",
+                    "duracion": 326,
+                    "created_at": "2022-12-03T00:46:04.000Z",
+                    "updated_at": "2022-12-03T00:46:04.000Z",
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                },
+                {
+                    "id": 5,
+                    "titulo": "Rasguña las piedras",
+                    "duracion": 334,
+                    "created_at": "2022-12-03T00:46:46.000Z",
+                    "updated_at": "2022-12-03T00:46:46.000Z",
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                },
+                {
+                    "id": 6,
+                    "titulo": "Lunes otra vez",
+                    "duracion": 330,
+                    "created_at": "2022-12-03T01:01:58.000Z",
+                    "updated_at": "2022-12-03T01:01:58.000Z",
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                },
+                {
+                    "id": 7,
+                    "titulo": "Aprendizaje",
+                    "duracion": 365,
+                    "created_at": "2022-12-03T01:02:49.000Z",
+                    "updated_at": "2022-12-03T01:02:49.000Z",
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                },
+                {
+                    "id": 8,
+                    "titulo": "Mr. Jones, o Pequeña semblanza de una ",
+                    "duracion": 104,
+                    "created_at": "2022-12-03T01:03:58.000Z",
+                    "updated_at": "2022-12-03T01:03:58.000Z",
+                    "genero_id": 1,
+                    "album_id": 1,
+                    "artista_id": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Jazz",
+            "canciones": [
+                {
+                    "id": 10,
+                    "titulo": "So What",
+                    "duracion": 567,
+                    "created_at": "2022-12-07T21:20:58.000Z",
+                    "updated_at": null,
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                },
+                {
+                    "id": 11,
+                    "titulo": "Freddie Freeloader",
+                    "duracion": 591,
+                    "created_at": "2022-12-07T21:21:12.000Z",
+                    "updated_at": null,
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                },
+                {
+                    "id": 12,
+                    "titulo": "Blue in Green",
+                    "duracion": 339,
+                    "created_at": "2022-12-07T21:21:33.000Z",
+                    "updated_at": null,
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                },
+                {
+                    "id": 13,
+                    "titulo": "All Blues",
+                    "duracion": 697,
+                    "created_at": "2022-12-07T21:25:17.000Z",
+                    "updated_at": null,
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                },
+                {
+                    "id": 14,
+                    "titulo": "Flamenco Sketches",
+                    "duracion": 567,
+                    "created_at": "2022-12-07T21:25:32.000Z",
+                    "updated_at": null,
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                },
+                {
+                    "id": 15,
+                    "titulo": "On Green Dolphin Street",
+                    "duracion": 591,
+                    "created_at": "2022-12-07T21:25:47.000Z",
+                    "updated_at": null,
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                },
+                {
+                    "id": 16,
+                    "titulo": "Fran-Dance",
+                    "duracion": 351,
+                    "created_at": "2022-12-07T21:27:23.000Z",
+                    "updated_at": null,
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                },
+                {
+                    "id": 17,
+                    "titulo": "Stella By Starlight ",
+                    "duracion": 284,
+                    "created_at": "2022-12-07T21:27:43.000Z",
+                    "updated_at": "2022-12-07T21:29:06.000Z",
+                    "genero_id": 2,
+                    "album_id": 2,
+                    "artista_id": 2
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Metal",
+            "canciones": []
+        },
+        {
+            "id": 4,
+            "name": "Alternative & Punk",
+            "canciones": []
+        },
+        {
+            "id": 5,
+            "name": "Rock And Roll",
+            "canciones": []
+        },
+        {
+            "id": 6,
+            "name": "Blues",
+            "canciones": []
+        },
+        {
+            "id": 7,
+            "name": "Latin",
+            "canciones": []
+        },
+        {
+            "id": 8,
+            "name": "Reggae",
+            "canciones": []
+        },
+        {
+            "id": 9,
+            "name": "Pop",
+            "canciones": []
+        },
+        {
+            "id": 10,
+            "name": "Soundtrack",
+            "canciones": []
+        },
+        {
+            "id": 11,
+            "name": "Bossa Nova",
+            "canciones": []
+        },
+        {
+            "id": 12,
+            "name": "Easy Listening",
+            "canciones": []
+        },
+        {
+            "id": 13,
+            "name": "Heavy Metal",
+            "canciones": []
+        },
+        {
+            "id": 14,
+            "name": "R&B/Soul",
+            "canciones": []
+        },
+        {
+            "id": 15,
+            "name": "Electronica/Dance",
+            "canciones": []
+        },
+        {
+            "id": 16,
+            "name": "World",
+            "canciones": []
+        },
+        {
+            "id": 17,
+            "name": "Hip Hop/Rap",
+            "canciones": []
+        },
+        {
+            "id": 18,
+            "name": "Science Fiction",
+            "canciones": []
+        },
+        {
+            "id": 19,
+            "name": "TV Shows",
+            "canciones": []
+        },
+        {
+            "id": 20,
+            "name": "Sci Fi & Fantasy",
+            "canciones": []
+        },
+        {
+            "id": 21,
+            "name": "Drama",
+            "canciones": []
+        },
+        {
+            "id": 22,
+            "name": "Comedy",
+            "canciones": []
+        },
+        {
+            "id": 23,
+            "name": "Alternative",
+            "canciones": []
+        },
+        {
+            "id": 24,
+            "name": "Classical",
+            "canciones": []
+        },
+        {
+            "id": 25,
+            "name": "Opera",
+            "canciones": []
+        }
+    ]
+}

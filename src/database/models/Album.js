@@ -18,5 +18,6 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'albumes',
       timestamps: false,
   });
+
   return Album;
 }

@@ -33,13 +33,26 @@ module.exports = (sequelize, DataTypes) => {
           tableName: 'canciones',
           timestamps: false,
       });
-      // Una canción tiene un genero
+
 
       Cancion.associate = function(modelos){
+        // Una canción tiene un genero
         Cancion.belongsTo(modelos.Genero, {
           as: "generos",
           foreignKey: "genero_id"
         });
+
+        // Una canción tiene un album
+        Cancion.belongsTo(modelos.Album, {
+          as: "albumes",
+          foreignKey: "album_id"
+        });
+        
+        // Una canción tiene un artista
+        Cancion.belongsTo(modelos.Artista, {
+          as: "artistas",
+                  foreignKey: "artista_id"
+                })
       }
       
       return Cancion;
